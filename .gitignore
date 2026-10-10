@@ -1,0 +1,36 @@
+# --- secrets: this project handles scoped credentials. nothing sensitive lands here. ---
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials.json
+
+# --- python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# --- local state ---
+*.db
+*.sqlite3
+*.log
+
+# --- editors / os ---
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# stray run artifacts
+*.tmp.*
+smoke_out.txt
+smoke_err.txt
